@@ -1,4 +1,3 @@
-#!/bin/sh
+#!/bin/bash
 
-echo "Hello World"
-echo "Test"
+echo "Hello"$1
