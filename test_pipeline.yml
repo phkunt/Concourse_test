@@ -9,7 +9,6 @@ jobs:
     public: true
     plan:
     - get: test-fetch
-      trigger: true
     - task: execute_script
       config:
            platform: linux
