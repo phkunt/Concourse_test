@@ -20,5 +20,5 @@ jobs:
              - name: test-fetch
  
            run:
-             path: echo
+             path: test-fetch/HelloWorld.sh
              args: ["((text))"]
