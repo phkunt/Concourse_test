@@ -1,8 +1,4 @@
 resources:
-  - name: ruby-exercise
-    type: git
-    source:
-      uri: https://github.com/phkunt/Starting_exercise.git
   - name: test-fetch
     type: git
     source:
