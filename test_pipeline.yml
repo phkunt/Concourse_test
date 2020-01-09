@@ -1,0 +1,29 @@
+resources:
+  - name: ruby-exercise
+    type: git
+    source:
+      uri: https://github.com/phkunt/Starting_exercise.git
+  - name: test-fetch
+    type: git
+    source:
+      uri: https://github.com/phkunt/Concourse_test.git
+ 
+jobs:
+  - name: job-execute_HelloWorld
+    public: true
+    plan:
+    - get: test-fetch
+      trigger: true
+    - task: execute_script
+      config:
+           platform: linux
+           image_resource:
+             type: docker-image
+             source: {repository: busybox}
+ 
+           inputs:
+             - name: test-fetch
+ 
+           run:
+             path: echo
+             args: ["((text))"]
