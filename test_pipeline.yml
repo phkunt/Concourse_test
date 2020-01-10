@@ -22,9 +22,3 @@ jobs:
            run:
              path: test-fetch/HelloWorld.sh
              args: ["((text))"]
-  - name: redis_test
-    public: true
-    plan:
-    - get: test-fetch
-    - task: execute
-      file: task-fetch/task.yml
