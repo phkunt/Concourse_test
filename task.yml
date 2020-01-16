@@ -10,3 +10,6 @@ inputs:
 
 run:
   path: test-fetch/task.sh
+
+params:
+  HASHED_PASSWORD:
