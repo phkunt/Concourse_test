@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd test-fetch
-bundle install
-
-ruby redis_test.rb
+openssl passwd -1 -salt rasmusle abcd > Staticfile.auth
+cat Staticfile.auth
+> Staticfile.auth
+cat Staticfile.auth
